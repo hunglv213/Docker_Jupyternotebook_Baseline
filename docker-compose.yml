@@ -1,0 +1,13 @@
+object_detection:
+  image: datascience
+  container_name: datascience
+  restart: always
+  environment:
+     - TERM=xterm
+  hostname: '127.0.0.1'
+  ports:
+     - "8888:8888"         #JupyterNB
+
+  volumes:
+     # - /Users/chamalgomes/Documents/Python/GitHub/medium/JupyterWithDocker/test.txt:/root/datascience/test.txt
+     - /mnt/6ff19c96-33ad-4ca2-a50c-63ee1355eb0a/Docker_Jupyter/helloworld:/root/datascience/helloworld
